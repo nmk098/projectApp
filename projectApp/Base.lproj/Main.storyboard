@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d5F-ty-6WJ">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -8,43 +8,97 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="HGv-g0-w7r">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="projectApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <navigationController id="d5F-ty-6WJ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Tlk-aO-SMt">
+                        <rect key="frame" x="0.0" y="47" width="390" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="sHg-nU-9lT" kind="relationship" relationship="rootViewController" id="Dzh-zr-Vjs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hqq-so-f8r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-826" y="-55"/>
+        </scene>
+        <!--projectApp-->
+        <scene sceneID="nug-L0-4as">
+            <objects>
+                <viewController id="sHg-nU-9lT" customClass="MainScreenViewController" customModule="projectApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I6r-MQ-SsY">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w8d-qu-Xex">
-                                <rect key="frame" x="158" y="265" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jy-C4-iOq">
+                                <rect key="frame" x="75" y="233" width="240" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5jy-C4-iOq" secondAttribute="height" multiplier="4:1" id="SrJ-i3-tgP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Goals"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5LC-SX-xFg">
+                                <rect key="frame" x="75" y="333" width="240" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5LC-SX-xFg" secondAttribute="height" multiplier="4:1" id="cRx-Ae-h68"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Homework"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHz-Bf-ljv">
+                                <rect key="frame" x="75" y="433" width="240" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AHz-Bf-ljv" secondAttribute="height" multiplier="4:1" id="opN-pB-hbu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Bio"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QS0-we-yGi">
+                                <rect key="frame" x="75" y="533" width="240" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QS0-we-yGi" secondAttribute="height" multiplier="4:1" id="zaP-jR-Wuq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Notes"/>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="6Sz-rm-AdO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QS0-we-yGi" firstAttribute="top" secondItem="AHz-Bf-ljv" secondAttribute="bottom" constant="40" id="5Z5-cP-sHa"/>
+                            <constraint firstItem="5jy-C4-iOq" firstAttribute="centerX" secondItem="I6r-MQ-SsY" secondAttribute="centerX" id="8NF-B4-Fez"/>
+                            <constraint firstItem="5LC-SX-xFg" firstAttribute="centerX" secondItem="I6r-MQ-SsY" secondAttribute="centerX" id="Q6i-yB-t5f"/>
+                            <constraint firstItem="QS0-we-yGi" firstAttribute="centerX" secondItem="I6r-MQ-SsY" secondAttribute="centerX" id="REE-Ga-Fd9"/>
+                            <constraint firstItem="QS0-we-yGi" firstAttribute="width" secondItem="I6r-MQ-SsY" secondAttribute="width" multiplier="0.615385" id="Tjy-QF-nBv"/>
+                            <constraint firstItem="5jy-C4-iOq" firstAttribute="width" secondItem="I6r-MQ-SsY" secondAttribute="width" multiplier="0.615385" id="Wpu-2M-AzU"/>
+                            <constraint firstItem="AHz-Bf-ljv" firstAttribute="centerX" secondItem="I6r-MQ-SsY" secondAttribute="centerX" id="YaM-af-ifj"/>
+                            <constraint firstItem="5LC-SX-xFg" firstAttribute="top" secondItem="5jy-C4-iOq" secondAttribute="bottom" constant="40" id="f0S-X4-ybN"/>
+                            <constraint firstItem="AHz-Bf-ljv" firstAttribute="top" secondItem="5LC-SX-xFg" secondAttribute="bottom" constant="40" id="gdg-KA-OU2"/>
+                            <constraint firstItem="5jy-C4-iOq" firstAttribute="top" secondItem="6Sz-rm-AdO" secondAttribute="top" constant="90" id="k5E-1M-u5y"/>
+                            <constraint firstItem="5LC-SX-xFg" firstAttribute="width" secondItem="I6r-MQ-SsY" secondAttribute="width" multiplier="0.615385" id="szV-rr-iRN"/>
+                            <constraint firstItem="AHz-Bf-ljv" firstAttribute="width" secondItem="I6r-MQ-SsY" secondAttribute="width" multiplier="0.615385" id="t8a-6P-2zh"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="projectApp" id="NZH-Hf-5Jp"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gsC-JK-nUX" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="38" y="26"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="oUG-uk-DkS">
-            <objects>
-                <viewController id="4cB-lq-mLL" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="T1J-4x-QbZ">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="t9C-tr-sNW"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JuC-xC-U7Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="823" y="26"/>
+            <point key="canvasLocation" x="17" y="-55"/>
         </scene>
     </scenes>
     <resources>
