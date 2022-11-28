@@ -9,9 +9,13 @@ import UIKit
 
 class MainScreenViewController: UIViewController {
 
+    @IBOutlet var goalsBttn: UIButton!
+    @IBOutlet var homeWorkBttn: UIButton!
+    @IBOutlet var bioBttn: UIButton!
+    @IBOutlet var notesBttn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
 

@@ -95,6 +95,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ProjectApp" id="NZH-Hf-5Jp"/>
+                    <connections>
+                        <outlet property="bioBttn" destination="AHz-Bf-ljv" id="1sz-I4-2XU"/>
+                        <outlet property="goalsBttn" destination="5jy-C4-iOq" id="1Qy-PX-8kc"/>
+                        <outlet property="homeWorkBttn" destination="5LC-SX-xFg" id="xPp-lM-Nj1"/>
+                        <outlet property="notesBttn" destination="QS0-we-yGi" id="jGV-Cj-pc4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gsC-JK-nUX" sceneMemberID="firstResponder"/>
             </objects>
