@@ -24,7 +24,7 @@
             </objects>
             <point key="canvasLocation" x="-826" y="-55"/>
         </scene>
-        <!--projectApp-->
+        <!--ProjectApp-->
         <scene sceneID="nug-L0-4as">
             <objects>
                 <viewController id="sHg-nU-9lT" customClass="MainScreenViewController" customModule="projectApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -94,7 +94,7 @@
                             <constraint firstItem="AHz-Bf-ljv" firstAttribute="width" secondItem="I6r-MQ-SsY" secondAttribute="width" multiplier="0.615385" id="t8a-6P-2zh"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="projectApp" id="NZH-Hf-5Jp"/>
+                    <navigationItem key="navigationItem" title="ProjectApp" id="NZH-Hf-5Jp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gsC-JK-nUX" sceneMemberID="firstResponder"/>
             </objects>
