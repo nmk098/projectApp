@@ -1,38 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kg5-Rq-upO">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--projectApp-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="projectApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainScreenViewController" customModule="projectApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gD-3f-Bu2">
-                                <rect key="frame" x="157.66666666666666" y="404.66666666666669" width="75" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Acu-MX-7gP">
+                                <rect key="frame" x="75" y="223" width="240" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Acu-MX-7gP" secondAttribute="height" multiplier="4:1" id="B6m-Fa-Gxf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Goals"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fbr-CI-1kX">
+                                <rect key="frame" x="75" y="323" width="240" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Fbr-CI-1kX" secondAttribute="height" multiplier="4:1" id="bK4-av-G4e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Homework"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGH-IJ-jLJ">
+                                <rect key="frame" x="75" y="423" width="240" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UGH-IJ-jLJ" secondAttribute="height" multiplier="4:1" id="7lz-i2-aBw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Bio"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dna-Tr-z2w">
+                                <rect key="frame" x="75" y="523" width="240" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Dna-Tr-z2w" secondAttribute="height" multiplier="4:1" id="3N7-h5-d7x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Notes"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2gD-3f-Bu2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="D76-r1-R6p"/>
-                            <constraint firstItem="2gD-3f-Bu2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qai-Fb-nV9"/>
+                            <constraint firstItem="UGH-IJ-jLJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Lk-Hu-VOg"/>
+                            <constraint firstItem="Fbr-CI-1kX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JSN-4l-nQk"/>
+                            <constraint firstItem="Acu-MX-7gP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M0g-Ns-npO"/>
+                            <constraint firstItem="Dna-Tr-z2w" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.615385" id="Nto-LM-8Hm"/>
+                            <constraint firstItem="Fbr-CI-1kX" firstAttribute="top" secondItem="Acu-MX-7gP" secondAttribute="bottom" constant="40" id="RTL-cB-atL"/>
+                            <constraint firstItem="Dna-Tr-z2w" firstAttribute="top" secondItem="UGH-IJ-jLJ" secondAttribute="bottom" constant="40" id="ThG-ds-8Qr"/>
+                            <constraint firstItem="Dna-Tr-z2w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ttw-8Q-mM9"/>
+                            <constraint firstItem="Fbr-CI-1kX" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.615385" id="UpP-O1-Dby"/>
+                            <constraint firstItem="Acu-MX-7gP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="apq-W6-6h9"/>
+                            <constraint firstItem="Acu-MX-7gP" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.615385" id="l2w-Y9-chx"/>
+                            <constraint firstItem="UGH-IJ-jLJ" firstAttribute="top" secondItem="Fbr-CI-1kX" secondAttribute="bottom" constant="40" id="o2i-di-xta"/>
+                            <constraint firstItem="UGH-IJ-jLJ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.615385" id="sSH-7P-v0V"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="projectApp" id="T0x-Yx-K3W"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="-28"/>
+            <point key="canvasLocation" x="0.0" y="-28.436018957345969"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SGV-qD-CSG">
+            <objects>
+                <navigationController id="Kg5-Rq-upO" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="iZM-EK-nhV">
+                        <rect key="frame" x="0.0" y="47" width="390" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="q25-4b-Z8G"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="it2-VM-7p1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-823" y="-20"/>
         </scene>
     </scenes>
     <resources>
