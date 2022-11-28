@@ -18,6 +18,8 @@ class MainScreenViewController: UIViewController {
         super.viewDidLoad()
     }
 
-
+    @IBAction func goalsBttnTapped() {
+    }
+    
 }
 
