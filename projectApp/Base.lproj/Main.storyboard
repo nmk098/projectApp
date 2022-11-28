@@ -15,23 +15,9 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EL6-iJ-k3C">
-                                <rect key="frame" x="157.66666666666666" y="404.66666666666669" width="75" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="EL6-iJ-k3C" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4XR-m7-fwY"/>
-                            <constraint firstItem="EL6-iJ-k3C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hSy-MU-XvP"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="Bttn" destination="EL6-iJ-k3C" id="rB0-RM-Mw7"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
