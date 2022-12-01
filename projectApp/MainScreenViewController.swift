@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainScreenViewController: UIViewController {
 
     @IBOutlet var Bttn: UIButton!
     
